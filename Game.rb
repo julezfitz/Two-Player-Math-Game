@@ -36,6 +36,7 @@ class Game
             @current_player.subtract_life
         end
 
+        #displays score for each round
         puts "P1: #{@player1.lives}/3 vs P2: #{@player2.lives}/3"
 
         #check if game has ended
