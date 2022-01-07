@@ -1,0 +1,31 @@
+Classes
+
+Player Class
+ - lives
+ - name (player 1 or 2)
+
+Methods
+ Subtract life
+ Reset lives
+
+ Game Class
+ - current player
+ - first player score
+ - second player score
+ - winner?
+ - current question
+
+ Methods
+    Check answer
+    Change player turn - generate new question, prompt
+    Update score
+    Check if winner / If not, continue. If winner, display end state (prompt play again)
+    New game
+
+ Questions Class
+- first number
+- second number
+- answer
+
+Methods
+    Generate question
