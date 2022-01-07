@@ -13,7 +13,7 @@ class Game
 
     def game_ends
         # check current player lives for game ending
-        if @current_player.lives = 0
+        if @current_player.lives == 0
             @game_ended = true
             return true
         else
@@ -23,12 +23,12 @@ class Game
 
     def call_question
         puts "-- NEW TURN --"
-        question = Question.new
-        puts "#{@current_player.name}: what does #{question.equation} equal?"
-        current_answer = gets.chomp
+        @question = Question.new
+        puts "#{@current_player.name}: what does #{@question.equation} equal?"
+        @current_answer = gets.chomp
 
         #check answer against question answer
-        if current_answer = question.answer
+        if @current_answer.to_i == @question.answer
             puts "#{@current_player.name}: Yes, you are correct!"
         else
             #subtract life
