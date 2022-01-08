@@ -42,9 +42,9 @@ class Game
         #check if game has ended
         if game_ends
             if @current_player == @player1
-                puts "Player 2 wins!"
+                puts "Player 2 wins with a score of #{@player2.lives}/3!"
             else
-                puts "Player 1 wins!"
+                puts "Player 1 wins with a score of #{@player1.lives}/3!"
             end
             
             puts "-- GAME OVER --"
